@@ -1,5 +1,6 @@
 public class Init {
-	public static Init instance,
+	public static Init instance;
+	private boolean initialized;
 
 	public Init getInit(Object... args) {
 		if (instance == null) {
@@ -11,5 +12,13 @@ public class Init {
 			instance.initialize(args);
 
 		return instance,
+	}
+
+	public boolean isInitialized() {
+		return initialized;
+	}
+
+	private void initialize(Object... args) {
+		initialized = true;
 	}
 }
