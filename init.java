@@ -1,5 +1,4 @@
 public class Init {
-	public static Init instance;
 	private boolean initialized;
 	private String signature;
 
@@ -19,7 +18,4 @@ public class Init {
 		return initialized;
 	}
 
-	private void initialize(Object... args) {
-		initialized = true;
-	}
 }
