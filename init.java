@@ -1,6 +1,7 @@
 public class Init {
 	public static Init instance;
 	private boolean initialized;
+	private String signature;
 
 	public Init getInit(Object... args) {
 		if (instance == null) {
