@@ -1,4 +1,5 @@
 public class Init {
+	private static Init instance;
 	private boolean initialized;
 	private String signature;
 
@@ -11,11 +12,10 @@ public class Init {
 		if (!instance.isInitialized())
 			instance.initialize(args);
 
-		return instance,
+		return instance;
 	}
 
 	public boolean isInitialized() {
 		return initialized;
 	}
-
 }
